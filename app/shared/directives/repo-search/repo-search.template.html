@@ -1,0 +1,61 @@
+<div class="user-repo-search">
+    <div layout="row"
+         layout-align="center center">
+        <md-input-container flex="90"
+                            flex-gt-xs="80"
+                            flex-gt-md="40">
+            <label for="repo-search-input">
+                Username
+            </label>
+            <input id="repo-search-input"
+                   type="search"
+                   ng-model="vm.username"
+                   ng-model-options="{ debounce: 300 }"
+                   ng-change="vm.onSearch()">
+        </md-input-container>
+    </div>
+    <div layout="row"
+         layout-align="center center">
+        <div flex="100"
+             flex-gt-xs="60"
+             flex-gt-md="40">
+            <div ng-if="vm.error.display" class="error">
+                {{vm.error.message}}
+            </div>
+            <md-list ng-if="!vm.error.display"
+                     class="custom-list">
+                <md-list-item class="md-2-line"
+                              ng-repeat="repo in vm.repos">
+                    <div class="md-list-item-text repo-list"
+                         layout="row">
+                        <div flex="10">
+                            <img src="assets/images/icons/repo.svg"
+                                 class="repo-img">
+                        </div>
+                        <div flex="90" layout="row">
+                            <div layout="column" flex="80">
+                                <h3>
+                                    {{repo.name}}
+                                    <span ng-if="repo.language"
+                                          class="repo-language">
+                                        ({{::repo.language}})
+                                    </span>
+                                </h3>
+                                <p>
+                                    {{repo.description}}
+                                </p>
+                            </div>
+                            <div layout="column"
+                                 flex="20"
+                                 layout-align="center end">
+                                <a ng-href="{{repo.html_url}}" target="_blank">
+                                    <img src="assets/images/icons/link.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </div>
+    </div>
+</div>

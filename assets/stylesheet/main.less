@@ -1,0 +1,36 @@
+@import "variables";
+@import "mixins";
+@import "imports";
+
+.logo {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.error {
+  color: @error;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  padding: 24px;
+}
+
+.custom-list {
+  padding: 0;
+  background: @bg_primary;
+  .box-shadow-default();
+}
+
+md-list-item {
+  border-bottom: 1px solid @txt_secondary;
+}
+
+a {
+  img {
+    width: 18px;
+    height: auto;
+  }
+}
+
