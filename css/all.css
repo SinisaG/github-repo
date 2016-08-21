@@ -1,0 +1,70 @@
+.box-shadow-default {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.user-repo-search #repo-search-input {
+  font-size: 24px;
+  height: 32px;
+  line-height: 32px;
+}
+@media (min-width: 768px) {
+  .user-repo-search #repo-search-input {
+    font-size: 36px;
+    height: 42px;
+    line-height: 42px;
+  }
+}
+.user-repo-search label {
+  line-height: 24px;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .user-repo-search label {
+    line-height: 36px;
+    font-size: 36px;
+  }
+}
+.user-repo-search md-input-container {
+  margin: 48px 0 0;
+}
+@media (min-width: 768px) {
+  .user-repo-search md-input-container {
+    margin: 144px 0 0;
+  }
+}
+.user-repo-search .repo-language {
+  font-size: 12px;
+}
+.user-repo-search .repo-img {
+  max-width: 80%;
+}
+.user-repo-search .repo-list {
+  padding: 12px 0;
+}
+.user-repo-search .user-img {
+  width: 72px;
+  height: auto;
+  margin: 0 24px;
+}
+.logo:hover {
+  cursor: pointer;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  padding: 24px;
+}
+.custom-list {
+  padding: 0;
+  background: white;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+md-list-item {
+  border-bottom: 1px solid lightgrey;
+}
+a img {
+  width: 18px;
+  height: auto;
+}

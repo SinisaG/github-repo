@@ -2,6 +2,10 @@
 
 An example of using github API with simple angular based webapp
 
+## Demo
+
+You can see live demo [here](https://sinisag.github.io/github-repo/).
+
 ## Specs
 
 Build a simple client-side app that lists GitHub repositories for a given user.
